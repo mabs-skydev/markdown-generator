@@ -4,6 +4,8 @@ namespace Artan\MarkdownGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
+use Artan\MarkdownGenerator\Commands\MarkdownGeneratorCommand;
+
 class MarkdownGeneratorServiceProvider extends ServiceProvider
 {
     /**
@@ -25,7 +27,14 @@ class MarkdownGeneratorServiceProvider extends ServiceProvider
     {
         // Publishes
         $this->publishes([
-            __DIR__.'../config/markdown-generator.php' => config_path('markdown-generator.php'),
+            __DIR__.'\config\markdown-generator.php' => config_path('markdown-generator.php'),
         ]);
+
+        // Commands
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                MarkdownGeneratorCommand::class,
+            ]);
+        }
     }
 }

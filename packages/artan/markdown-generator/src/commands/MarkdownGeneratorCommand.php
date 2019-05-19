@@ -24,7 +24,7 @@ class MarkdownGeneratorCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Generate markdown files for controllers, models and migrations';
 
     protected $controllers_path;
     protected $models_path;
