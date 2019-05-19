@@ -1,0 +1,13 @@
+{
+    "name": "artan/markdowngenerator",
+    "description": "This packages will allow you to generate markdown files for your project's controllers, models and migrations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mohamed-ali-ben-slimen",
+            "email": "benslimenma@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
