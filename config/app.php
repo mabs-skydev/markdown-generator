@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Artan\MarkdownGenerator\MarkdownGeneratorServiceProvider::class,
 
         /*
          * Application Service Providers...
